@@ -1,0 +1,121 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+
+  /* size */
+  --base-space: 8px;
+  --size-button: 60px;
+  --size-border: 4px;
+  --size-thumbnail: 50px;
+  --font-size: 18px;
+
+  /* annimation */
+  --animation-duration: 300ms;
+}
+
+body {
+  margin: 64px;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  padding: 18px 18px;
+  background-color: beige;
+  justify-content: center;
+  display: flex;
+}
+
+.main_content {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.option {
+  background-color: beige;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.img-button {
+  background-color: transparent;
+  background-size: 80px 80px;
+  border-color: transparent;
+  width: 80px;
+  height: 80px;
+  margin-right: 8px;
+}
+
+#t-shirt {
+  background-image: url("imgs/blue_t.png");
+}
+
+#pants {
+  background-image: url("imgs/blue_p.png");
+}
+
+#skirt {
+  background-image: url("imgs/blue_s.png");
+}
+
+.color-button {
+  border-color: transparent;
+  border-radius: 8px;
+  height: 70px;
+  /* height: 80px;
+  width: 150px; */
+  padding: 0px 30px;
+  /* height: 80px; */
+  margin-left: 10px;
+}
+
+#blue {
+  background-color: var(--color-blue);
+}
+
+#yellow {
+  background-color: var(--color-yellow);
+}
+
+#pink {
+  background-color: var(--color-pink);
+}
+
+.item_list {
+  padding: 16px 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  background-color: white;
+  margin: 4px 4px;
+  border-radius: 16px;
+  padding: 8px 16px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+
+.item_image {
+  width: 40px;
+  height: 40px;
+}
+
+.item_name {
+  padding: 16px 16px;
+}
