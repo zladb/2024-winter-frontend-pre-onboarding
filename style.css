@@ -19,103 +19,83 @@
 }
 
 body {
-  margin: 64px;
-  background-color: beige;
+  height: 100vh;
+  background-color: var(--color-black);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  padding: 18px 18px;
-  background-color: beige;
-  justify-content: center;
-  display: flex;
+  cursor: pointer;
+  transition: transform var(--animation-duration) ease;
 }
 
-.main_content {
-  width: 600px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-content: center;
-}
-
-.option {
-  background-color: beige;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.img-button {
+.btn {
   background-color: transparent;
-  background-size: 80px 80px;
-  border-color: transparent;
-  width: 80px;
-  height: 80px;
-  margin-right: 8px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: transform var(--animation-duration) ease;
+  margin-right: var(--base-space);
 }
 
-#t-shirt {
-  background-image: url("imgs/blue_t.png");
+.btn:hover,
+.logo:hover {
+  transform: scale(1.1);
 }
 
-#pants {
-  background-image: url("imgs/blue_p.png");
+.buttons {
+  display: flex;
+  align-items: center;
 }
 
-#skirt {
-  background-image: url("imgs/blue_s.png");
+.imgBtn {
+  width: var(--size-button);
+  height: var(--size-button);
 }
 
-.color-button {
-  border-color: transparent;
-  border-radius: 8px;
-  height: 70px;
-  /* height: 80px;
-  width: 150px; */
-  padding: 0px 30px;
-  /* height: 80px; */
-  margin-left: 10px;
+.colorBtn {
+  font-size: var(--font-size);
+  padding: calc(var(--base-space) * 2);
+  border-radius: var(--size-border);
 }
 
-#blue {
+.blue {
   background-color: var(--color-blue);
 }
 
-#yellow {
+.yellow {
   background-color: var(--color-yellow);
 }
 
-#pink {
+.pink {
   background-color: var(--color-pink);
 }
 
-.item_list {
-  padding: 16px 8px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+.items {
+  width: 60%;
+  height: 60%;
+  list-style: none;
+  padding-left: 0;
+  overflow-y: scroll;
 }
 
 .item {
-  background-color: white;
-  margin: 4px 4px;
-  border-radius: 16px;
-  padding: 8px 16px;
-  width: 90%;
+  background-color: var(--color-white);
   display: flex;
   align-items: center;
+  padding: var(--base-space);
+  margin-bottom: var(--base-space);
 }
 
-.item_image {
-  width: 40px;
-  height: 40px;
+.item__thumbnail {
+  width: var(--size-thumbnail);
+  height: var(--size-thumbnail);
 }
 
-.item_name {
-  padding: 16px 16px;
+.item__description {
+  margin-left: var(--base-space);
+  font-size: var(--font-size);
 }
