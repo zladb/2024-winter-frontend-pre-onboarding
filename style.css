@@ -82,6 +82,11 @@ body {
   overflow-y: scroll;
 }
 
+/* 스크롤바를 감추기 */
+.items::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge 등 Webkit 기반 브라우저에서 사용 */
+}
+
 .item {
   background-color: var(--color-white);
   display: flex;
@@ -93,9 +98,15 @@ body {
 .item__thumbnail {
   width: var(--size-thumbnail);
   height: var(--size-thumbnail);
+  margin: var(--base-space) * 2;
 }
 
 .item__description {
-  margin-left: var(--base-space);
+  margin-left: calc(var(--base-space) * 3);
   font-size: var(--font-size);
+  /* font-weight: 600; */
+}
+
+.invisible {
+  display: none;
 }
